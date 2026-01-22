@@ -16,6 +16,10 @@ tar xf lazygit.tar.gz lazygit
 mv lazygit /usr/local/bin/
 rm lazygit.tar.gz
 
+# Lazygit config (j/k swap)
+mkdir -p ~/.config/lazygit
+cp "$(dirname "$0")/lazygit-config.yml" ~/.config/lazygit/config.yml
+
 # Ripgrep & fd
 apt update && apt install -y ripgrep fd-find
 ln -sf $(which fdfind) /usr/local/bin/fd

@@ -1,0 +1,4 @@
+keybinding:
+  universal:
+    prevItem-alt: j
+    nextItem-alt: k
